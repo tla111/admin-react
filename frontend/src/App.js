@@ -15,6 +15,14 @@ const App = () => {
                             content="Settings"
                             position="Top"
                         >
+                            <button
+                                type="button"
+
+                                style={{ background: "blue", borderRadius: '50%' }}
+                                className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
+                            >
+                                <FiSettings />
+                            </button>
                         </TooltipComponent>
                     </div>
                 </div>
