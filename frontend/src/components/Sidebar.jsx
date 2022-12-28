@@ -39,9 +39,6 @@ const Sidebar = () => {
                                         to={`/${link.name}`}
                                         key={link.name}
                                         onClick={() => { }}
-                                        style={({ isActive }) => ({
-                                            backgroundColor: isActive ? currentColor : '',
-                                        })}
                                         className={({ isActive }) => (isActive ? activeLink : normalLink)}
                                     >
                                         {link.icon}
