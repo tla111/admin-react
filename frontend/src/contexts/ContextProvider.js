@@ -8,3 +8,15 @@ const initialState = {
     userProfile: false,
     notification: false,
 };
+
+export const ContextProvider = ({ children }) => {
+    const [activeMenu, setActiveMenu] = useState(true);
+    return (
+        // eslint-disable-next-line react/jsx-no-constructed-context-values
+        <StateContext.Provider value={{ activeMenu }}>
+            {children}
+        </StateContext.Provider>
+    );
+}
+
+export const useStateContext = () => useContext(StateContext);
