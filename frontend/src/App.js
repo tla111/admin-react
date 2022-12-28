@@ -47,15 +47,15 @@ const App = () => {
                         }
                     >
                         <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-                            Navbar
+                            <Navbar />
                         </div>
                     </div>
 
                     <div>
                         <Routes>
-                            {/* dashboard  */}
-                            <Route path="/" element={(<Ecommerce />)} />
-                            <Route path="/ecommerce" element={(<Ecommerce />)} />
+                            dashboard
+                            <Route path="/" element={<Ecommerce />} />
+                            <Route path="/ecommerce" element={<Ecommerce />} />
 
                             {/* pages  */}
                             <Route path="/orders" element={<Orders />} />
