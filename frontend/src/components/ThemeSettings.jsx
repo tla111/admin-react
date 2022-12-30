@@ -22,8 +22,8 @@ const ThemeSettings = () => {
                     >
                         <MdOutlineCancel />
                     </button>
-                </div>
 
+                </div>
                 <div className="flex-col border-t-1 border-color p-4 ml-4">
                     <p className="font-semibold text-xl ">Theme Option</p>
 
@@ -35,7 +35,7 @@ const ThemeSettings = () => {
                             value="Light"
                             className="cursor-pointer"
                             onChange={setMode}
-                            checked={currentMode === "Light"}
+                            checked={currentMode === 'Light'}
                         />
                         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                         <label htmlFor="light" className="ml-2 text-md cursor-pointer">
@@ -49,7 +49,8 @@ const ThemeSettings = () => {
                             name="theme"
                             value="Dark"
                             onChange={setMode}
-                            checked={currentMode === "Dark"}
+                            className="cursor-pointer"
+                            checked={currentMode === 'Dark'}
                         />
                         {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
                         <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
@@ -81,7 +82,7 @@ const ThemeSettings = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ThemeSettings
+export default ThemeSettings;
